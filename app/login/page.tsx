@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function LoginScreen() {
     return(
         <>
@@ -62,9 +64,9 @@ export default function LoginScreen() {
   
             <p className="mt-10 text-center text-sm text-gray-500">
               Nâo Possui Cadastro?{' '}
-              <a href="/register" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              <Link href="/register" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                 Clique Aqui
-              </a>
+              </Link>
             </p>
           </div>
         </div>
