@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function RegisterScreen() {
     return(
         <>
@@ -151,9 +153,9 @@ export default function RegisterScreen() {
   
             <p className="mt-10 text-center text-sm text-gray-500">
               Ja possui Cadastro?{' '}
-              <a href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              <Link href="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                 Clique aqui
-              </a>
+              </Link>
             </p>
           </div>
         </div>
