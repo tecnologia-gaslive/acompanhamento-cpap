@@ -5,22 +5,32 @@ import Image from "next/image";
 export const FormL = () => {
   return (
     <>
-      <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+      <div className="bg-azulescuro flex h-screen flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-        <Image
-              className="mx-auto h-10 w-auto"
-              src="/image/logo-gaslive-escuro.svg"
-              alt="Gaslive Logo"
-              width={50}
-              height={50}
-            / >  
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-indigo-950">
-            ENTRE COM SUA CONTA
+          <Image
+            className="mx-auto h-10 w-auto"
+            src="/image/logo.png"
+            alt="Gaslive Logo"
+            width={75}
+            height={60}
+          />
+          </div>
+          <div>
+          <h2 className="mt-10 text-center text-5xl font-bold leading-9 tracking-tight text-slate-50">
+            Portal de Monitoramento
           </h2>
-        </div>
+          <p className="mt-10 text-center text-xl font-bold leading-9 tracking-tight text-slate-50">
+            Gerencie dados e acesse relatórios de usuários e clientes no app da
+            SleepUp
+          </p>
+          </div>
+        
 
-        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+        <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-slate-300 rounded-lg">
+          <form className="space-y-6 p-8" action="#" method="POST">
+            <h1 className="text-center text-2xl font-bold leading-9 tracking-tight text-sky-700">
+              LOGIN
+            </h1>
             <div>
               <div className="mt-2">
                 <input
@@ -69,7 +79,7 @@ export const FormL = () => {
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm text-gray-500">
+          <p className="mt-10 text-center text-sm text-slate-950">
             Nâo Possui Cadastro?{" "}
             <Link
               href="/register"
