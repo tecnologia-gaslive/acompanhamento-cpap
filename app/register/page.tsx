@@ -1,10 +1,10 @@
 import Link from "next/link"
-import { Form } from './components/form';
+import { FormR } from './components/formR';
 
 export default function RegisterScreen() {
     return(
-       
-            <Form></Form> 
-            
-    )
+       <>
+       <FormR></FormR>
+       </>      
+    );
 }
